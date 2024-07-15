@@ -19,6 +19,6 @@ export const appConfig: ApplicationConfig = {
       provideStorage(() => getStorage()),
       provideMessaging(() => getMessaging())
     ),
-    provideRouter(routes)
+    provideRouter(routes), provideFirebaseApp(() => initializeApp({"projectId":"cloudlab-97dac","appId":"1:186839915801:web:eeff52fb3292430a93f988","storageBucket":"cloudlab-97dac.appspot.com","apiKey":"AIzaSyCQHV_uNqyW_zwGmO9us4qFGsOLwtFqdeg","authDomain":"cloudlab-97dac.firebaseapp.com","messagingSenderId":"186839915801"})), provideAuth(() => getAuth()), provideFirestore(() => getFirestore()), provideMessaging(() => getMessaging()), provideStorage(() => getStorage())
   ],
 };
